@@ -18,7 +18,7 @@ services:
 
   wordpress:
     image: wordpress
-    container_name: wordpress
+    container_name: ${CONTAINER_NAME}
     restart: always
     ports:
       - ${PORT}:80
