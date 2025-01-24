@@ -30,7 +30,7 @@ services:
       - db
     volumes:
       - wordpress_data:/var/www/html
-      - /srv/wordpress/config/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
+      - ./uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
     networks:
       - caddy_network
 
