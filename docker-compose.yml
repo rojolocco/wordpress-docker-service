@@ -21,7 +21,7 @@ services:
     container_name: wordpress
     restart: always
     ports:
-      - 8081:80
+      - ${PORT}:80
     env_file:
       - .env
     mem_limit: 512m
